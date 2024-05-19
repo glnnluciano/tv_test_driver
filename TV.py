@@ -7,22 +7,47 @@ class TV:
         # set 1 as default volume_level
         self.volume_level = 1
         # set false (off) as default
-        self.power_on = False
+        self.power = False
         
-# testTV (new file)
-# import class
-# create objects (tv1 and tv2)
 # define methods
-    # turn_on()
+    def turn_on(self):
+        self.power = True
+
     # turn_off()
+    def turn_on(self):
+        self.power = False
+
     # get_channel()
+    def get_channel(self):
+        self.channel
+
     # set_channel()
+    def set_channel(self, set_channel):
+        self.set_channel = set_channel
+        
     # get_volume()
+    def get_volume(self):
+        self.volume_level
+
     # set volume()
+    def set_volume(self, set_volume):
+        self.set_volume = set_volume
+
     # channel_up()
+    def channel_up(self):
+        self.channel = self.channel + 1
+
     # channel_down()
+    def channel_down(self):
+        self.channel = self.channel - 1
+
     # volume_up()
+    def volume_up(self):
+        self.volume_level = self.volume_level + 1
+
     # volume_down()
+    def volume_down(self):
+        self.volume_level = self.volume_level - 1
 
 # call methods
 # print result
