@@ -7,9 +7,12 @@ tv1 = TV()
 tv2 = TV()
 
 # call methods
-channel1 = tv1.get_channel()
-channel2 = tv2.get_channel()
+tv1.set_channel(2)
+tv2.set_channel(5)
+
+get_channel1 = tv1.get_channel()
+get_channel2  = tv2.get_channel()
 
 # print result
-print(channel1)
-print(channel2)
+print(get_channel1)
+print(get_channel2)

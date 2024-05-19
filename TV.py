@@ -23,7 +23,7 @@ class TV:
 
     # set_channel()
     def set_channel(self, set_channel):
-        self.set_channel = set_channel
+        self.channel = set_channel
         
     # get_volume()
     def get_volume(self):
@@ -31,7 +31,7 @@ class TV:
 
     # set volume()
     def set_volume(self, set_volume):
-        self.set_volume = set_volume
+        self.volume_level = set_volume
 
     # channel_up()
     def channel_up(self):
