@@ -1,5 +1,3 @@
-import sys
-
 # TV class
 class TV:
 # define __init__ attributes and default values of attributes
@@ -25,12 +23,13 @@ class TV:
 
     # set_channel()                 Not working
     def set_channel(self, set_channel):
-        if self.power is self.turn_on and 1 <= self.channel <= 120:
+        if self.power == False:
+            print("TV is off")
+            return          
+        if 1 <= set_channel <= 120:
             self.channel = set_channel
-        elif self.power == False:
-            sys.exit("TV is off")
-        elif 1 > self.channel or 120 < self.channel:
-            sys.exit("Channel is out of range")
+        else:
+            print("Set channel is out of range")      
         
     # get_volume()
     def get_volume(self):
@@ -38,12 +37,13 @@ class TV:
 
     # set volume()                  Not working
     def set_volume(self, set_volume):
-        if self.power is self.turn_on and 1 <= self.volume_level <= 7:
+        if self.power == False:
+            print("TV is off")
+            return
+        if 1 <= set_volume <= 7:
             self.volume_level = set_volume
-        elif self.power == False:
-            sys.exit("TV is off")
-        elif 1 > self.volume_level or 7 < self.volume_level:
-            sys.exit("Volume is out of range")
+        else:
+            print("Set volume is out of range") 
 
     # channel_up()
     def channel_up(self):

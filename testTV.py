@@ -10,6 +10,8 @@ tv2 = TV()
 tv1.turn_on()
 tv2.turn_on()
 
+tv1.turn_off()
+
 tv1.set_channel(2)
 tv2.set_channel(5)
 
