@@ -68,10 +68,22 @@ class TV:
 
     # volume_up()
     def volume_up(self):
-        self.volume_level = self.volume_level + 1
+        if self.power == False:
+            print("TV is off. Can't modify volume.")
+            return
+        if self.volume_level == 7:
+            print("Max volume reached")
+            return
+        else:
+            self.volume_level = self.volume_level + 1
 
     # volume_down()
     def volume_down(self):
-        self.volume_level = self.volume_level - 1
-
-
+        if self.power == False:
+            print("TV is off. Can't modify volume.")
+            return
+        if self.volume_level == 1:
+            print("Min volume reached")
+            return
+        else:
+            self.volume_level = self.volume_level - 1
