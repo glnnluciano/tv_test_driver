@@ -47,11 +47,24 @@ class TV:
 
     # channel_up()
     def channel_up(self):
-        self.channel = self.channel + 1
+        if self.power == False:
+            print("TV is off. Can't modify channel.")
+            return
+        if self.channel == 120:
+            print("Max channel reached")
+        else:
+            self.channel = self.channel + 1
 
     # channel_down()
     def channel_down(self):
-        self.channel = self.channel - 1
+        if self.power == False:
+            print("TV is off. Can't modify channel.")
+            return
+        if self.channel == 1:
+            print("Min channel reached")
+            return
+        else:
+            self.channel = self.channel - 1
 
     # volume_up()
     def volume_up(self):

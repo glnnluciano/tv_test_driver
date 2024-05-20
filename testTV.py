@@ -11,9 +11,10 @@ tv1.turn_on()
 tv2.turn_on()
 
 tv1.turn_off()
+tv2.turn_off()
 
-tv1.set_channel(2)
-tv2.set_channel(5)
+tv1.set_channel(1)
+tv2.set_channel(120)
 
 tv1.set_volume(3)
 tv2.set_volume(6)
