@@ -21,7 +21,7 @@ class TV:
     def get_channel(self):
         return self.channel
 
-    # set_channel()                 Not working
+    # set_channel()
     def set_channel(self, set_channel):
         if self.power == False:
             print("TV is off")
@@ -35,7 +35,7 @@ class TV:
     def get_volume(self):
         return self.volume_level
 
-    # set volume()                  Not working
+    # set volume()
     def set_volume(self, set_volume):
         if self.power == False:
             print("TV is off")
