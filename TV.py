@@ -23,7 +23,7 @@ class TV:
     def get_channel(self):
         return self.channel
 
-    # set_channel()
+    # set_channel()                 Not working
     def set_channel(self, set_channel):
         if self.power is self.turn_on and 1 <= self.channel <= 120:
             self.channel = set_channel
@@ -36,9 +36,14 @@ class TV:
     def get_volume(self):
         return self.volume_level
 
-    # set volume()
+    # set volume()                  Not working
     def set_volume(self, set_volume):
-        self.volume_level = set_volume
+        if self.power is self.turn_on and 1 <= self.volume_level <= 7:
+            self.volume_level = set_volume
+        elif self.power == False:
+            sys.exit("TV is off")
+        elif 1 > self.volume_level or 7 < self.volume_level:
+            sys.exit("Volume is out of range")
 
     # channel_up()
     def channel_up(self):

@@ -7,6 +7,9 @@ tv1 = TV()
 tv2 = TV()
 
 # call methods
+tv1.turn_on()
+tv2.turn_on()
+
 tv1.set_channel(2)
 tv2.set_channel(5)
 
